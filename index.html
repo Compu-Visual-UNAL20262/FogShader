@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FogShader</title>
+  <link rel="stylesheet" href="./style.css" />
+  <!-- Librería local (NO CDN) -->
+  <script src="./p5.min.js"></script>
+</head>
+<body>
+  <!-- Panel flotante de controles -->
+  <div id="ui-panel">
+    <h2>Controles de Niebla</h2>
+
+    <div class="control-group">
+      <label id="label-near">Fog Near: 500</label>
+      <div id="container-near"></div>
+    </div>
+
+    <div class="control-group">
+      <label id="label-far">Fog Far: 2000</label>
+      <div id="container-far"></div>
+    </div>
+
+    <div class="control-group">
+      <label id="label-speed">Velocidad: 0.010</label>
+      <div id="container-speed"></div>
+    </div>
+  </div>
+
+  <!-- Scripts locales en el orden exacto requerido -->
+  <script src="./geometry.js"></script>
+  <script src="./texture.js"></script>
+  <script src="./sketch.js"></script>
+</body>
+</html>
